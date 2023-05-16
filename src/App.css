@@ -1,0 +1,33 @@
+
+.App{
+  margin: auto 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background-color: grey;
+  padding: 5px;
+}
+.Blogs{
+  display: flex;
+  justify-content: space-between;
+  margin:auto 10px;
+  gap: 10px;
+  
+}
+h1{
+  margin: auto 20%;
+}
+.theTitle h4{
+  border-left: 4px solid purple;
+  margin: 5px ;
+  padding: 10px;
+}
+.theBlog {
+  background-color: aliceblue;
+  width: 70%;
+  border-radius: 5px;
+}
+.content {
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+}
