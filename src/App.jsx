@@ -6,17 +6,25 @@ import Footer from './footer'
 function App() {
   const blog = [
     {
-      title: 'react tutorial',
-      content: <p>lorem10</p>
+      title: 'React tutorial',
+      content:'Welcome this is a vue js course, if you are interested join the discoured community to buy the course'
     },
     {
-      title: 'vue tutorial',
-    content: "lorem 23"
+      title: 'Vue tutorial',
+      content: "Welcome this is a vue js course, if you are interested join the discoured community to buy the course "
     }, 
     {
-      title: 'angular tutorial',
-      content: "lorem 23"
+      title: 'Javascript tutorial',
+      content: "Welcome this is an javascript course, if you are interested join the discoured community to buy the course"
+    },  
+    {
+      title: 'Angular tutorial',
+      content: "Welcome this is an Angular js course, if you are interested join the discoured community to buy the course"
     }, 
+    {
+      title: 'CSS tutorial',
+      content: "Welcome this is an Css course, if you are interested join the discoured community to buy the course"
+    },
   ]
 
   // const displayBlog = ()=>{

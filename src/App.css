@@ -9,18 +9,20 @@
 }
 .Blogs{
   display: flex;
-  justify-content: space-between;
+  justify-content: row;
+  gap: 15px; 
   margin:auto 10px;
-  gap: 10px;
   
 }
 h1{
-  margin: auto 20%;
+  margin: auto;
+  width: 90%;
 }
 .theTitle h4{
   border-left: 4px solid purple;
   margin: 5px ;
   padding: 10px;
+  background-color: aqua;
 }
 .theBlog {
   background-color: aliceblue;
@@ -30,4 +32,6 @@ h1{
 .content {
   border-bottom: 2px solid black;
   border-radius: 5px;
+  margin-left: 15px;
+  margin-bottom: 5px;
 }

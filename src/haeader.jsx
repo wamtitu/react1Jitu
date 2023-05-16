@@ -1,3 +1,4 @@
+ import './header.css'
  const Header = ()=>{
     return <div>
         <h1>Wamutitu.info@blog.com</h1>
