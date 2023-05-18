@@ -1,62 +1,33 @@
 
 import './App.css'
-import Header from './haeader'
-import Footer from './footer'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+//import main from './components/main'
+import Header from './components/header'
+import Footer from './components/footer'
+import Blogs from './pages/blogs'
+import About from './pages/about'
+import Home from './pages/home'
+import NotFound from './pages/notFound'
 
 function App() {
-  const blog = [
-    {
-      title: 'React tutorial',
-      content:'Welcome this is a vue js course, if you are interested join the discoured community to buy the course'
-    },
-    {
-      title: 'Vue tutorial',
-      content: "Welcome this is a vue js course, if you are interested join the discoured community to buy the course "
-    }, 
-    {
-      title: 'Javascript tutorial',
-      content: "Welcome this is an javascript course, if you are interested join the discoured community to buy the course"
-    },  
-    {
-      title: 'Angular tutorial',
-      content: "Welcome this is an Angular js course, if you are interested join the discoured community to buy the course"
-    }, 
-    {
-      title: 'CSS tutorial',
-      content: "Welcome this is an Css course, if you are interested join the discoured community to buy the course"
-    },
-  ]
-
-  // const displayBlog = ()=>{
-    
-  // }
+  
 
   return (
     <div className='App'>
+      <BrowserRouter>
       <Header/>
-      <div className='Blogs'>
-        <div className='theBlog'>
-          {blog.map((blogItem, index)=>(
-          <div key ={index}>
-            <div className='content'>
-            <h4>{blogItem.title}</h4>
-            <p>{blogItem.content}</p>
-            </div>
-          </div>
-          ))}
-        </div>
-        <div className='theTitle'>
-          {blog.map((blogItem, index)=>(
-          <div key ={index}>
-            <h4>{blogItem.title}</h4>
-          </div>
-          
-          ))}
-        </div>
-        
-      </div>
+        <Routes>
+          <Route path="/" element ={<Home/>}/>
+          <Route path="/about" element ={<About/>}/>
+          <Route path="/blogs" element ={<Blogs/>}/>
+          <Route path="*" element ={<NotFound/>}/> 
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+      {/* 
+      <Blogs/>   
       
-      <Footer/>
+       */}
 
     </div>
   )
